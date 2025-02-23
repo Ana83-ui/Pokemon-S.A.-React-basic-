@@ -1,0 +1,187 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body {
+  font-family: Arial, sans-serif;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  background: url("./assets/fondo1.jpg") 
+  center/cover no-repeat;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #a78e22);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em rgb(167, 67, 67));
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.btn{
+  display: flex;
+  gap: 30px;
+ margin-bottom: 50px;
+ justify-content: center;
+}
+button{
+   background-color: #fff;
+   color: #000
+}
+
+.buttons{
+  display: flex;
+  gap: 30px;
+ justify-content: center;
+ margin-top: 20px;
+}
+
+
+
+.details{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px dotted #a78f22;
+  border-radius: 5%;
+  width: 320px;
+  background-color: #a74343;
+  margin-inline-start: 180px;
+  margin-bottom: 10px;
+}
+
+.id{
+  margin-top: 20px;
+}
+
+.contact{
+  border: 2px dotted #a78f22;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-inline-start: 230px;
+  background-color: #a74343;
+}
+
+.input{
+  margin-top: 25px;
+}
+.input:hover{
+  transform: scale(1.1);
+}
+
+input{
+  border: 2px solid #a7a7a7;
+  background-color: rgb(167, 67, 67);
+
+}
+
+
+.title{
+  font-weight: bold;
+  text-align: left;
+}
+.title1{
+  margin-top: 10px;
+}
+
+.create{
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.create:hover{
+  background-color: rgb(167, 67, 67);
+  border-color: #a78f22;
+}
+
+.register{
+  border: 2px dotted #a78f22;
+  width: 350px;
+  margin-inline-start: 160px;
+  border-radius: 10%;
+  background-color: #a74343;
+}
+
+.button{
+  /* background-color: #fff; */
+  background-color: rgb(167, 67, 67);
+  border: 1px solid #000;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.button:hover{
+  background-color: #a78e22;
+}
+
+.componentList{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1300px;
+  margin-inline-start: -390px;
+}
+
+.detailsContainer{
+  border: 1px dotted #a78f22;
+border-radius: 5%;
+width: 400px;
+  margin-inline-start: 150px;
+background-color: #a74343;
+}
+
+.cuore{
+  width: 50px;
+  margin-inline-start: -19px;
+  margin-top: -8px;
+}
+
+.btn-cuore{
+  width: 55px;
+  height: 55px;
+  background-color: transparent;
+}
+
+.fav{
+  margin-inline-start: 780px;
+  width: 130px;
+}
